@@ -5,13 +5,86 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Arun Roy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
+  <header>
+    <div class="container">
+      <div class="header-section row middle">
+        <div class="logo"></div>
+        <ul class="navbar row middle">
+          <li class="list-item"><a class="list-item-link home" href="#">Home</a></li>
+          <li class="list-item"><a class="list-item-link" href="#">Features</a></li>
+          <li class="list-item"><a class="list-item-link" href="#">Elements</a></li>
+          <li class="list-item"><a class="list-item-link" href="#">Membership</a></li>
+          <li class="list-item more"><a class="list-item-link" href="#">More<i class="bx bxs-chevron-down"></i></a>
+            <div class="menu-list">
+                <ul class="menu-list-ul">
+                  <li class="list-items-menu"><a class="menu-list-link" href="#">Tags</a></li>
+                  <li class="list-items-menu"><a class="menu-list-link" href="#">Autors</a></li>
+                  <li class="list-items-menu"><a class="menu-list-link" href="#">Monthly achive</a></li>
+                  <li class="list-items-menu"><a class="menu-list-link" href="#">Yearliy achive</a></li>
+                  <li class="list-items-menu"><a class="menu-list-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+          </li>
+          <li class="list-item"><a class="list-item-link" href="#">Sign in</a></li>
+          <li class=" sing-in-btn"><a href="#" class="list-item-link btn-sign">Sign in</a> </li>
+        </ul>
+        
+        <div class="serach-btns row middle">
+          <div class="btns-navbar"><i id="btn-modal-connect" class="bx bx-search"></i></div>
+          <div class="btns-navbar moon" id="modeBtn"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="box-modal" id="box-modal">
+    <button id="btn-close-modal">X</button>
+    <input type="text" class="input-search-modal" placeholder="Type to search">
+    <p class="modal-text">See post by Popular tags</p>
+     <div class="btns-social-style row">
+        <a class="btns-styles" href="#">Lifestyle</a>
+        <a class="btns-styles" href="#">Litearute</a>
+        <a class="btns-styles" href="#">Secondary</a>
+        <a class="btns-styles" href="#">Successfull</a>
+        <a class="btns-styles" href="#">Livefreedom</a>
+     </div> 
+  </div>
+
+
+
+
+  <section class="hero-section">
+    <div class="container">
+      <div class="left-side">
+        <h1 class="title-arslan text-color">Hay, I am Arslan</h1>
+        <p class="text-autor text-color">An architect, software developer, YouTuber and <br> keynote speaker. On this site I write about my learning <br> and experience</p>
+        <div class="input-section row middle">
+          <input class="input-email" type="email" name="email" placeholder="Your email address">
+          <a class="btn-subscribe" href="#">Subscribe</a>
+        </div>
+        <div class="follow-section row">
+          <p class="follow-up text-color">Follow:</p>
+          <div class="bx-icon"></div>
+          <div class="bx-icon"></div>
+          <div class="bx-icon"></div>
+          <div class="bx-icon"></div>
+        </div>  
+      </div>
+      <div class="right-side-anime">
+        <div class="anime-first"></div>
+      </div>
+    </div>
+  </section>
 
   <script src="js/main.js"></script>
 </body>
