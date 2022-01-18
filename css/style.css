@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 header{
+  z-index: 99999;
   margin: 0 auto;
   width: 100%;
   position: fixed;
@@ -86,6 +87,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: var(--body-background);
+  overflow-x: hidden;
 }
 .dark{
   --body-background:#272935;
@@ -296,3 +298,91 @@ body {
   transition: all 0.3s ease-in;
   background-color:var(--darkblue) ;
 }
+
+.anime-first{
+  margin-top: 200px;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px dashed #000;
+}
+.anime-inside{
+  /* border: 1px solid #000; */
+  width: 600px;
+  position: absolute;
+  height: 600px;
+  border-radius: 50%;
+  /* background-color:  rgba(0, 0, 0, 0.446); */
+  animation-name: aylana;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+}
+@keyframes aylana {
+  0%{
+    transform: rotateZ(0deg);
+    }
+  50%{
+    transform: rotateZ(180deg);
+  }
+  100%{
+    transform: rotateZ(360deg);
+  }
+  
+}
+
+
+.anime-inside::after{
+  content: '';
+  position: relative;
+  left: 140px;
+  width: 50px;
+  position: absolute;
+  height: 50px;
+  border-radius: 50%;
+  background-color:  #f01717;
+  box-shadow: 4px 0px 33px 28px rgba(248, 19, 42, 0.446);
+}
+
+
+.anime-inside::before{
+  content: '';
+  position: relative;
+  left: 20px;
+  width: 40px;
+  top: 420px;
+  position: absolute;
+  height: 40px;
+  border-radius: 50%;
+  background-color:  #2395ed;
+  transform: rotateZ(180deg);
+  box-shadow: 4px 0px 33px 28px rgba(80, 19, 248, 0.446);
+  display: block;
+}
+
+.second{
+  top: 50px;
+  left: 790px;
+  width: 500px;
+  height: 500px;
+}
+.second-inside{
+  /* left: 50px; */
+  /* border: 1px solid #000 ; */
+  width: 500px;
+  height: 500px;
+}
+.second-inside::before{
+  left: 400px;
+  background-color: #15e92e;
+  
+  box-shadow: 4px 0px 33px 28px rgba(15, 235, 34, 0.446);
+}
+.second-inside::after{
+  left: 340px;
+  background-color: #4315e9;
+  
+  box-shadow: 4px 0px 33px 28px rgba(81, 15, 235, 0.446);
+}
+
