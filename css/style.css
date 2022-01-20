@@ -13,13 +13,53 @@ header{
   background-color: var(--body-background);
   border-bottom: 1px solid #d4d4d8;
 }
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--body-background);
+  overflow-x: hidden;
+}
+.dark{
+  --body-background:#272935;
+  --bx-color: #fff;
+  --text-color: #fff;
+  --bg-img-dark: url('../images/sun-regular-24.png');
+  --bg-logo: url('../images/dark-theme-logo.svg');
+  --line-color: #fff;
+  --socials1:url('../images/twitter-logo-24-light.png');
+  --socials2:url('../images/instagram-logo-24-light.png');
+  --socials3:url('../images/telegram-logo-24-light.png');
+  --socials4:url('../images/github-logo-24.png');
+}
+:root{
+  --socials1:url('../images/twitter-logo-24.png');
+  --socials2:url('../images/instagram-logo-24.png');
+  --socials3:url('../images/telegram-logo-24.png');
+  --socials4:url('../images/github-logo-24-dark.png');
+  --line-color: #000;
+  --text-color: #1b2746;
+  --gray-color:#575861;
+  --darkblue: #012293;
+  --lightblue: #0057FE;
+  --body-background:#fff;
+  --border-color:#35394b;
+  --bx-color: #161F38;
+  --bg-img-dark: url('../images/moon-regular-24.png');
+  --bg-logo: url('../images/arun-light-theme-logo.svg');
+}
+.container{
+  width: 1150px;
+}
 .box-modal {
   z-index:999 ;
   margin: 0 auto;
   position: fixed;
   top: -50px;
   width: 100vw;
-  height: 800px;
+  height: 1000vh;
   display: block;
   background-color: var(--body-background);
   color: var(--text-color);
@@ -72,7 +112,7 @@ header{
 .btns-social-style{
   margin-top: 20px;
   position: relative;
-  left: 350px;
+  left: 250px;
   gap: 10px;
 }
 .show {
@@ -81,46 +121,7 @@ header{
   display: block;
 }
 
-body {
-  font-family: 'Work Sans', sans-serif;
-  background-color: #fff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--body-background);
-  overflow-x: hidden;
-}
-.dark{
-  --body-background:#272935;
-  --bx-color: #fff;
-  --text-color: #fff;
-  --bg-img-dark: url('../images/sun-regular-24.png');
-  --bg-logo: url('../images/dark-theme-logo.svg');
-  --line-color: #fff;
-  --socials1:url('../images/twitter-logo-24-light.png');
-  --socials2:url('../images/instagram-logo-24-light.png');
-  --socials3:url('../images/telegram-logo-24-light.png');
-  --socials4:url('../images/github-logo-24.png');
-}
-:root{
-  --socials1:url('../images/twitter-logo-24.png');
-  --socials2:url('../images/instagram-logo-24.png');
-  --socials3:url('../images/telegram-logo-24.png');
-  --socials4:url('../images/github-logo-24-dark.png');
-  --line-color: #000;
-  --text-color: #1b2746;
-  --gray-color:#575861;
-  --darkblue: #012293;
-  --lightblue: #0057FE;
-  --body-background:#fff;
-  --border-color:#35394b;
-  --bx-color: #161F38;
-  --bg-img-dark: url('../images/moon-regular-24.png');
-  --bg-logo: url('../images/arun-light-theme-logo.svg');
-}
-.container{
-  width: 1150px;
-}
+
 .moon{
   background-image: var(--bg-img-dark);
   width: 25px;
@@ -440,10 +441,8 @@ body {
 }
 .video-najot{
   border-radius: 50%;
-  animation-iteration-count: i;
+  animation-iteration-count: infinite;
 }
-
-
 
 /* ----------------------------------------- */
 .Sayttan-tashqari-reklama{
@@ -594,18 +593,13 @@ body {
 }
 .aside-inbox{
   position: relative;
-  left: 10%;
-  right: 10%;
-}
-.container-second{
-  position: relative;
-  left: 2%;
-  right: 2%;
-  margin: 0 auto;
+  /* left: 10%;
+  right: 10%; */
 }
 .letter-section{
+  border-radius: 10px;
   padding: 30px;
-  width: 80%;
+  width: 1100px;
   background: linear-gradient(90deg, rgba(124,123,131,1) 0%, rgba(64,0,255,1) 0%, rgba(50,17,194,1) 54%);
 }
 .bx-mail-send{
@@ -648,7 +642,7 @@ body {
   
 }
 .header-section{
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 .sub-btn-inbox:hover{
   background-color:var(--darkblue);
