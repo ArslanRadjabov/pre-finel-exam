@@ -102,6 +102,7 @@ body {
 }
 #btn-close-modal{
   position: absolute;
+  z-index: 999;
   top: 90px;
   left: 1200px;
   border-radius: 50%;
@@ -490,10 +491,11 @@ body {
   background: linear-gradient(90deg, rgba(124,123,131,1) 0%, rgba(64,0,255,1) 0%, rgba(50,17,194,1) 54%);
   color: rgb(248, 248, 248);
   border: 1px solid #000;
-  width: 850px; 
+  width: 900px; 
   height: 265px; 
   border-radius: 10px;
   margin-bottom: 80px;
+  margin-left: 10%;
 }
 .save-percent{
   padding: 5px 5px;
@@ -587,6 +589,8 @@ body {
   background-image: url('../images/rasm-4.jpg');
 }
 .container{
+  width: 1300px;
+  margin: 0 auto;
   position: relative;
   left: 5%;
   right:5%;
