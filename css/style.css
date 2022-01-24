@@ -720,6 +720,10 @@ body {
 .socials-item:hover .socials-link i{
   color: #0057ff;
 }
+.socials-link .bx{
+  color: var(--text-color);
+  font-size: 20px;
+}
 .socials-item{
 list-style: none;
 }
