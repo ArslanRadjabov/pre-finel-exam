@@ -457,6 +457,7 @@ body {
   color: #0057FE;
 }
 .item-box-aside{
+  margin-left: 50px;
   padding: 10px 10px;
   text-align: center;
   font-weight: 700;
@@ -491,11 +492,12 @@ body {
   background: linear-gradient(90deg, rgba(124,123,131,1) 0%, rgba(64,0,255,1) 0%, rgba(50,17,194,1) 54%);
   color: rgb(248, 248, 248);
   border: 1px solid #000;
-  width: 900px; 
+  width: 1000px; 
   height: 265px; 
   border-radius: 10px;
   margin-bottom: 80px;
-  margin-left: 10%;
+  /* margin-left: 10%; */
+  margin-top: 50px;
 }
 .save-percent{
   padding: 5px 5px;
@@ -576,7 +578,7 @@ body {
   left: 50px;
 }
 .body-item{
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 .second-img{
   background-image: url('../images/rasm-2.jpg');
@@ -659,4 +661,95 @@ body {
   gap: 10px;
   width: 680px;
   border-radius: 10px;
+}#site-footer{
+  border-top: 1px solid var(--border-color);
+  margin-top: 80px;
+}
+.footer-inner{
+  padding: 64px 10px 30px 10px;
+}
+.purple{
+  background-color: #bc4fe2;
+}
+.green{
+  background-color: #479139;
+}
+.yellow{
+  background-color: #a7772a;
+}
+.footer-logo{
+  width: 100px;
+  height: 30px;
+  background-image: var(--bg-logo);
+  background-size: cover;
+  margin-bottom: 20px;
+}
+.footer-desc{
+  width: 360px;
+  flex-grow: 1;
+}
+.footer-text{
+  color: var(--text-color);
+  line-height: 1.5;
+  margin-bottom: 100px;
+  width: 360px;
+}
+.footer-nav{
+  width: 200px;
+}
+.footer-link{
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+.footer-link:hover{
+  color: #0057ff;
+}
+.footer-item{
+  margin-bottom: 16px;
+  list-style: none;
+}
+.socials-par{
+  color: var(--text-color);
+  margin-right: 10px;
+}
+.socials-item:not(:last-child){
+  margin-right: 10px;
+}
+.socials-item:hover .socials-link i{
+  color: #0057ff;
+}
+.socials-item{
+list-style: none;
+}
+.socials{
+  margin-left: 10px;
+}
+.footer-title{
+  color: #b2b2b3;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.footer-end{
+  margin-bottom: 50px;
+}
+.socials-link:hover{
+  color: #0057ff;
+}
+.bxl-instagram{
+  color: var(--text-color);
+}
+.copyright{
+  position: relative;
+  right: 100px;
+  color: var(--text-color);
+}
+.arun{
+  color: var(--text-color);
+  text-decoration: none;
+}
+.arun:hover{
+  color: #0057ff;
 }
